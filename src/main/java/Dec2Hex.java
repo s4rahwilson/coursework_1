@@ -8,6 +8,7 @@ class Dec2Hex
       System.out.println(Hex());
     }
 
+
     public static int Hex()  {
         String number = "6";
         if (number.length() > 0)
@@ -21,6 +22,9 @@ class Dec2Hex
                 System.err.println("Argument" + number + " must be an integer.");
                 System.exit(1);
             }
+        } else {
+            System.err.println();
+
         }
     	char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
          int rem, num;
