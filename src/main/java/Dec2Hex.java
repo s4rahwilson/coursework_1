@@ -8,7 +8,7 @@ class Dec2Hex
 
 
     public static int Hex()  {
-            String number = "";
+            String number = "5";
        if (number == null || number.isEmpty()) {
            System.err.println("string must not be empty");
            System.exit(1);
