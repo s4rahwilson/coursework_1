@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class Dec2Hex
 {
     public static int Arg1;
@@ -10,7 +8,11 @@ class Dec2Hex
 
 
     public static int Hex()  {
-        String number = "6";
+            String number = "";
+       if (number == null || number.isEmpty()) {
+           System.err.println("string must not be empty");
+           System.exit(1);
+       }
         if (number.length() > 0)
         {
             try
@@ -23,7 +25,7 @@ class Dec2Hex
                 System.exit(1);
             }
         } else {
-            System.err.println();
+            System.err.println("argument must have a valid input");
 
         }
     	char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
